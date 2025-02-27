@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const props = defineProps({
   listing: Object,
@@ -47,12 +48,12 @@ const showMoreDescription = () => {
                   <i class="pi pi-map-marker text-orange-700"></i>
                   {{ listing.location}}
                 </div>
-                <a
-                  :href="`/job/${listing.id}`"
+                <RouterLink
+                  :to="`/job/${listing.id}`"
                   class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
                 >
                   Read More
-                </a>
+                </RouterLink>
               </div>
             </div>
           </div>
