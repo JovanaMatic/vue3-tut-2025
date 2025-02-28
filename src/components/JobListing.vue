@@ -49,7 +49,7 @@ const showMoreDescription = () => {
                   {{ listing.location}}
                 </div>
                 <RouterLink
-                  :to="`/job/${listing.id}`"
+                  :to="`/jobs/${listing.id}`"
                   class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
                 >
                   Read More
