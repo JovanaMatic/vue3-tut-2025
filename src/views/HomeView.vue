@@ -10,5 +10,5 @@ const title = ref('Become Vue Developer')
 <template>
   <Hero :title="title"/>
   <HomeCards />
-  <JobListings />
+  <JobListings listing="3" :hideButton="true" />
 </template>

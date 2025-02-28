@@ -2,5 +2,5 @@
 import JobListings from '@/components/JobListings.vue'
 </script>
 <template>
-  <JobListings />
+  <JobListings listing="" :hideButton="false" />
 </template>
